@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Compute Box</string>
+    <string name="kmperhr">Km/hr</string>
+
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyA7X05rucfDEMYPWbUYnzVV0pCBEaH0YGs</string>
+
+</resources>

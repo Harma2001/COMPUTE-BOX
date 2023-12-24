@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    android:background="#000000"
+    tools:context=".UI.MainActivity2"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text=" XX:XX AM"
+        android:textColor="@color/whitis"
+        android:textSize="30sp"
+        android:layout_alignParentTop="true"
+        app:fontFamily="@font/ledfont" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_left"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+
+                tools:ignore="UseAppTint" />
+
+
+            <ImageView
+                android:id="@+id/iv_right"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                tools:ignore="UseAppTint" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="370dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_vertical"
+        >
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_bt_disabled"
+            />
+
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/signals2"
+           />
+    </LinearLayout>
+
+
+
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/ic_settings"
+        android:layout_marginRight="40dp"
+        />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="30dp"
+        android:src="@drawable/apps_icon" />
+
+    <!--
+    <ImageView
+        android:id="@+id/img_map"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/img" />
+    -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginLeft="250dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="1dp"
+
+        android:layout_alignParentBottom="true">
+
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_car_battery" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar_test"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:max="110"
+            android:maxWidth="7dip"
+            android:maxHeight="32dip"
+            android:minWidth="7dip"
+            android:minHeight="32dip" />
+
+        <TextView
+            android:id="@+id/tv_soh"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/progress_bar_test"
+            android:gravity="center"
+            android:text="0%"
+            android:textColor="@color/mercblue"
+            android:textSize="21sp"
+            app:fontFamily="@font/xolonium_bold" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rr1"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerVertical="true"
+        android:gravity="center">
+
+        <com.github.anastr.speedviewlib.AwesomeSpeedometer
+            android:id="@+id/raySpeedometer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            app:sv_backgroundCircleColor="@color/colorBlack"
+            app:sv_endDegree="420"
+            app:sv_highSpeedColor="@color/colorRed2"
+            app:sv_indicator="QuarterLineIndicator"
+            app:sv_indicatorColor="@color/whitis"
+            app:sv_indicatorLightColor="@color/green"
+            app:sv_lowSpeedColor="@color/green"
+            app:sv_markColor="@color/ash2"
+            app:sv_markWidth="5dp"
+            app:sv_maxSpeed="240"
+            app:sv_mediumSpeedColor="@color/green"
+            app:sv_minSpeed="0"
+            app:sv_rayColor="@color/colorBlack"
+            app:sv_speedBackgroundColor="@color/colorBlack"
+            app:sv_speedTextColor="@color/colorBlack"
+            app:sv_speedTextFormat="INTEGER"
+            app:sv_startDegree="120"
+            app:sv_textColor="@color/whitis"
+            app:sv_textSize="8dp"
+            app:sv_tickTextFormat="INTEGER"
+            app:sv_trianglesColor="#fff"
+            app:sv_unit=" "
+            app:sv_unitTextColor="@color/whitis"
+            app:sv_unitTextSize="5sp"
+            app:sv_withEffects="false"
+            app:sv_withTremble="false" />
+
+        <TextView
+            android:id="@+id/tv_rpm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="0"
+            android:textColor="@color/whitis"
+            android:textSize="60sp"
+            app:fontFamily="@font/digital" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_rpm"
+            android:layout_centerInParent="true"
+            android:text="Kmph"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            app:fontFamily="@font/digital" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center">
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>

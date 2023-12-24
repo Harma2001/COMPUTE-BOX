@@ -1,0 +1,30 @@
+package com.yanamobility.usblibrary.Utils;
+
+public enum TX {
+
+    SIG_ARC_MAIA2 ,
+    SIG_EMOJI_INDEX,
+    SIG_PITCH_ANGLE,
+    SIG_YAW_ANGLE,
+    SIG_ACTIVITY_ID,
+    SIG_CBU_DIAGRESPDYNA,
+    SIG_PRESENCE_FLAG,
+    SIG_PHONE,
+    SIG_HANDBAG,
+    SIG_UMBRELLA,
+    SIG_LAPTOP,
+    SIG_KEYS,
+    SIG_SPECS,
+    SIG_BOTTLE,
+    SIG_BACKPACK,
+    SIG_FACE_ID,
+    SIG_NO_OF_OCCUPANTS,
+    SIG_HEAD_POSE,
+    SIG_HEAD_NOD,
+    SIG_YAWN,
+    SIG_HEAD_SHAKE,
+    SIG_EYE_GAZE,
+    SIG_EMOTIONS,
+    SIG_HAND_GESTURE,
+    SIG_MOUTH_MOVEMENT,
+}
